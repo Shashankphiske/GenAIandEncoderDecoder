@@ -1,0 +1,17 @@
+What encoder decoder architecture does?
+Encoder Decoder architecture is a sequence to sequence architecture. 
+It consumes sequences and spits out sequences
+
+How does it do it ?
+first the encoder stage creates a vector representation of the input sentence
+then the decoder stage creates a sequence output
+
+Encoder :
+A recurrel neural network encoder takes each token in the input sentence one at a time and produces a state representing these tokens as well as all the previously ingested tokens
+then the state is used in the next encoding step as input along with the next token to produce the next state 
+Once you are done ingesting all the input tokens into the RNN you output a vector that essentially represents the full input sentence.
+
+
+decoder :
+The decoder takes the vector representation of the input sentence and produces an output sentence 
+
